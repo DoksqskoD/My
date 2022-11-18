@@ -2,6 +2,7 @@ import requests
 from time import sleep
 from Screen_resolution import Screen
 import shutil
+import Blind
 
 def main():
     Triger=0
