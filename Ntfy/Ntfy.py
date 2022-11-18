@@ -1,7 +1,6 @@
 import requests
 from time import sleep
 from Screen_resolution import Screen
-import shutil
 import Blind
 
 def main():
@@ -11,7 +10,7 @@ def main():
         Array=list(Blind.Blind())
         sleep(1)
         Tim_Array=list(Blind.Blind())
-        
+
         if len(Array) != len(Tim_Array):
             if len(Array) < len(Tim_Array):
                 for X in Tim_Array:
