@@ -1,11 +1,8 @@
-import subprocess
-import copy
+import requests
+from Ntfy.Screen_resolution import Screen
 
-output = subprocess.check_output('tasklist /fo csv /nh')
-output = str(output.decode('cp866'))
-Routput = copy.copy("%r" % output)
-del output
-Routput=Routput.replace(r"\r\n", ",")
-Routput=Routput.split(",")
-Routput=Routput[::5]
-del Routput[len(Routput)-1]
+if True:
+    print(Screen("Skrin"))
+    requests.post("https://ntfy.sh/MyPCJ9rV9Tn20Y1UkzNQrChPFG4ho2RE2AqPkZMeTZ5y",
+                  data=open("d:\KPython\Test\Skrin.png", 'rb'),
+                  headers={"Filename": "Skrin.png"})
