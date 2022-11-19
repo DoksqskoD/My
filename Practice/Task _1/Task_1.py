@@ -6,8 +6,8 @@
 #_______________________________________________________________________________________
 import numpy
 
-def Array_A(*Array_a):
-    Array_a=numpy.array(Array_a)[0]
+def Array_A(Array_a):
+    Array_a=numpy.array(Array_a)
     Array_a = numpy.fromiter((i for i in Array_a if i < 5), dtype = (Array_a.dtype.descr[0][1], len(Array_a.shape)))
     return Array_a
 if __name__ == "__main__":
