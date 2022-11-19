@@ -12,5 +12,6 @@ def Blind():
     del Routput[len(Routput) - 1]
     return set(Routput)
 if __name__ == "__main__":
+
     Blind()
 
