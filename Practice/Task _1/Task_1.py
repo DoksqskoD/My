@@ -2,10 +2,10 @@
 #_______________________________________________________________________________________
 import numpy
 
-def Array_A(*Arrau_a):
-    Arrau_a=numpy.array(Arrau_a)
-    Arrau_a = numpy.fromiter((i for i in Arrau_a[0] if i < 5), dtype = Arrau_a.dtype)
-    return Arrau_a
+def Array_A(*Array_a):
+    Array_a=numpy.array(Array_a)[0]
+    Array_a = numpy.fromiter((i for i in Array_a if i < 5), dtype = (Array_a.dtype.descr[0][1], len(Array_a.shape)))
+    return Array_a
 if __name__ == "__main__":
     S=[1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
     Array_A(S)
