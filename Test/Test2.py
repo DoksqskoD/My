@@ -1,8 +1,12 @@
-import itertools
 import numpy
-X=0
-for x in itertools.product('1234567890qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM',repeat=8):
-    X+=1
-    if X%1000000000==0:
-        print(str(X/1000000000)+"T")
-print(x)
+import numpy as np
+# keys = np.array([2,3,4,7,8])
+# result = np.where(keys==4)
+# result[0][0]
+#
+a=numpy.array([3,4,6,5,3,4,4,3,4,2,4,8,6,8,2,])
+b=numpy.array([3,4,6,5,3,4,4,3,4,2,4,8,6,8,2,7])
+v=3==a
+if v:
+    print("fefsesf")
+print(v)

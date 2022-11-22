@@ -1,7 +1,7 @@
 import subprocess
 import copy
 
-def Blind():
+def Blind() -> set:
     output = subprocess.check_output('tasklist /fo csv /nh')
     output = str(output.decode('cp866'))
     Routput = copy.copy("%r" % output)
@@ -12,6 +12,5 @@ def Blind():
     del Routput[len(Routput) - 1]
     return set(Routput)
 if __name__ == "__main__":
-
     Blind()
 
