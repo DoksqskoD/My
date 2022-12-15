@@ -19,7 +19,7 @@ class Ui_Dialog(object):
         self.verticalLayoutWidget_2.setGeometry(QtCore.QRect(0, 0, 521, 371))
         self.verticalLayoutWidget_2.setObjectName("verticalLayoutWidget_2")
         self.verticalLayout_2 = QtWidgets.QVBoxLayout(self.verticalLayoutWidget_2)
-        self.verticalLayout_2.setContentsMargins(0, 0, 0, 0)
+        self.verticalLayout_2.setContentsMargins(5, 5, 3, 3)
         self.verticalLayout_2.setObjectName("verticalLayout_2")
         self.label_2 = QtWidgets.QLabel(self.verticalLayoutWidget_2)
         self.label_2.setObjectName("label_2")
@@ -110,7 +110,7 @@ class Ui_Dialog(object):
 
     def retranslateUi(self, Dialog):
         _translate = QtCore.QCoreApplication.translate
-        Dialog.setWindowTitle(_translate("Dialog", "Dialog"))
+        Dialog.setWindowTitle(_translate("Dialog", "Программа проверки информационной безопасности"))
         self.label_2.setText(_translate("Dialog", "Проверка межсетевого экрана"))
         self.pushButton_4.setText(_translate("Dialog", "Проверка подключения к интернету"))
         self.pushButton_5.setText(_translate("Dialog", "Проверка наличия меж сетевого экрана"))
