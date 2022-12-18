@@ -1,18 +1,10 @@
-import numpy
+import jinja
 
-class MyClass:
+Dick={}
 
-    def __init__(self, Namber):
-        Array=[]
+for x in "rangewewrdv":
+    Dick[x+"v"]=x
+inf=iter(Dick)
+print(next(inf))
 
-    def Tunning(self):
-        self.Array=numpy.array(self.Array)
 
-A=MyClass()
-b=MyClass()
-C=MyClass()
-D=MyClass()
-
-b.Tunning()
-print(type(A),type(b),type(C),type(D))
-print(type(A.Array),type(b.Array),type(C.Array),type(D.Array))

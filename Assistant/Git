@@ -1,0 +1,47 @@
+1. Устанавливаем параметры
+
+    git config --global user.name "Doksq"
+    git config --global user.email "Doksqdoksq@gmail.com"
+
+    Сохраняитьца в домашней директории
+    На линексе
+    -ls cat .gitconfig
+    На винде
+    -git config -l
+    Просмотр файла с параметрами user.name и user.email
+    type .\.gitconfig
+
+2. Работа с Local Repository
+
+    mkdir myproject
+    ### mkdir создание проекта,  myproject название проекта
+
+    Создание базы данных git
+    git init .
+
+    Проверка состояния базы данных
+    Git status
+
+    Переход файлов в стадию Staged
+    Git add .
+
+    Снимок состояние проекта
+    Git commit -m "Название снимка"
+
+3. История изменений, .gitignore, и восстановление файлов
+
+    Просмотр всех commits
+    Git log
+
+    Просмотр последнего commit
+    Git log -1
+
+    Просмотр последнего commit c деталями, как изменился проект
+    Git log -1 -p
+
+    Откатить файл к последнему commit
+    git checkout -- Экспортируем с Qt designer из формата .ui в .py.txt
+
+
+
+
